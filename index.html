@@ -3,51 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
+    <title>自己紹介 - 畠山 颯斗</title>
     <style>
         body {
-            font-family: sans-serif;
-            line-height: 1.6;
+            font-family: 'Helvetica Neue', Arial, sans-serif; /* モダンなサンセリフフォントに変更 */
+            line-height: 1.8; /* 行間を少し広げて読みやすく */
             color: #333;
+            background-color: #f4f4f4; /* 背景色を少し明るくソフトに */
+            margin: 0; /* bodyのマージンをリセット */
+            padding: 0;
+        }
+
+        .container {
             max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
+            margin: 40px auto; /* 上下のマージンを追加 */
+            padding: 20px;
+            background-color: #fff; /* コンテンツエリアの背景を白に */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 少し長めの影で浮遊感を */
+            border-radius: 8px;
         }
-        h1 {
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee; /* ヘッダー下に区切り線 */
+            margin-bottom: 30px;
+        }
+
+        header h1 {
             color: #2c3e50;
+            font-size: 2.5em; /* 見出しを少し大きく */
+            margin-bottom: 0;
         }
-        img {
+
+        .introduction {
+            padding: 25px; /* パディングを少し調整 */
+            background-color: #f9f9f9; /* 元の背景色を維持 */
+            border-radius: 8px; /* 角丸を維持 */
+            border: 1px solid #e0e0e0; /* 枠線を少しソフトに */
+            margin-bottom: 30px; /* 画像とのマージン */
+        }
+
+        .introduction p {
+            margin-bottom: 15px; /* 段落間のマージン */
+            font-size: 1.05em; /* 本文のフォントサイズを少し大きく */
+        }
+
+        .introduction strong {
+            color: #007bff; /* 強調テキストの色をアクセントカラーに (例: 青) */
+            font-weight: bold; /* 太字を維持 */
+        }
+
+        img.profile-image { /* 画像用のクラスを追加 */
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto 20px auto; /* 上マージン0、左右auto、下マージン20px */
+            border-radius: 8px; /* 角丸を維持 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を維持 */
         }
-        .introduction {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-        .live-info {
+
+        .live-info { /* スタイルは元のHTMLにはありませんでしたが、念のため残しておきます */
             font-style: italic;
-            color: #666;
-            margin-top: 15px;
+            color: #555; /* 少し濃いめのグレーに */
+            margin-top: 20px;
+            text-align: center; /* 中央寄せにするなど */
+        }
+
+        /* レスポンシブ対応の調整 (基本的なもの) */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* スマホ表示時のbodyパディング */
+            }
+            .container {
+                margin: 20px auto;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .introduction p {
+                font-size: 1em;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>自己紹介</h1>
+    <div class="container">
+        <header>
+            <h1>畠山 颯斗</h1>
+            <p>慶應義塾大学 理工学部 3年 SD学科</p>
+        </header>
 
-    <div class="introduction">
-        <p>初めまして。私は<strong>畠山 颯斗</strong>といいます。慶應義塾大学理工学部３年SD学科で日々勉強しています。</p>
-        <p>画像は6/1にあったofficial髭男dismというグループのライブでの様子で、日産スタジアムでライブが行われました。この通り、私は音楽が好きで、多いときには月に２回ライブに行くことがあります。backnumberやTeleなども好きなので、ぜひ好みがあったらお話ししましょう!</p>
-        
+        <main>
+            <section class="introduction">
+                <p>初めまして。日々勉強に励んでいます。</p>
+                <p>画像は6/1にあったOfficial髭男dismというグループのライブでの様子で、日産スタジアムでライブが行われました。この通り、私は音楽が好きで、多いときには月に２回ライブに行くことがあります。backnumberやTeleなども好きなので、ぜひ好みがあったらお話ししましょう!</p>
+            </section>
+
+            <img src="image.png" alt="Official髭男dismのライブの様子" class="profile-image">
+            </main>
     </div>
-
-    <img src="image.png" alt="Official髭男dismのライブの様子">
 
 </body>
 </html>
